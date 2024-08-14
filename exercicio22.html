@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial do Portfólio</title>
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    padding: 5px;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 200px 1fr;
+}
+
+.header {
+    background-color: #276c8af0;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    grid-column: 1 / 3; 
+}
+
+.navigation {
+    background-color: #87b5c9f0;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    grid-row: 2 / 3; 
+}
+
+.ConteudoPrincipal {
+    background-color: #60868b;
+    padding: 20px;
+    grid-row: 2 / 3; 
+}
+
+.footer {
+    background-color: #276c8af0;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    grid-column: 1 / 3; /* Rodapé ocupa a largura total */
+}
+
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">Cabeçalho</header>
+            <nav class="navigation">Navegação</nav>
+            <main class="ConteudoPrincipal">Conteúdo Principal</main>
+            <footer class="footer">Rodapé</footer>
+        </div>
+        <a href="index.html">Voltar para o exercício 1</a>
+    </body>
+</html>
